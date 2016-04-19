@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
+    "react-mixin": "^2.0.2",
     "react-mounter": "^1.2.0"
   }
 }

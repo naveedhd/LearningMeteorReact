@@ -23,3 +23,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 practicalmeteor:mocha   # An excellent default test driver package.
 kadira:flow-router
 twbs:bootstrap
+accounts-password
+react-meteor-data

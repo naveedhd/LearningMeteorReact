@@ -1,12 +1,13 @@
 import React from 'react';
 import {mount} from 'react-mounter';
 // load React components
-import {App} from './components/App/App.jsx';
+import App from './components/App/App.jsx';
 import {Nav} from './components/App/Nav/Nav.jsx';
 import {Dashboard} from './components/App/Dashboard/Dashboard.jsx';
 import {RequestForm} from './components/App/RequestForm/RequestForm.jsx';
 import {NewNinja} from './components/App/NewNinja/NewNinja.jsx';
 import {NinjaList} from './components/App/NinjaList/NinjaList.jsx';
+import {Login} from './components/App/Auth/Login/Login.jsx';
 
 FlowRouter.route("/", {
   action() {
@@ -40,6 +41,15 @@ FlowRouter.route("/ninjas", {
     mount(App, {
       nav: <Nav />,
       content: <NinjaList />
+    });
+  }
+});
+
+FlowRouter.route("/login", {
+  action() {
+    mount(App, {
+      nav: <Nav />,
+      content: <Login />
     });
   }
 });
